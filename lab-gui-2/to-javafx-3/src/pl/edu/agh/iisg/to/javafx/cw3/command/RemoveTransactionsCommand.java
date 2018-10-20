@@ -10,7 +10,6 @@ import java.util.stream.Collectors;
 public class RemoveTransactionsCommand implements Command {
     private List<Transaction> transactionsToRemove = new ArrayList<>();
     private Account account;
-    private String message;
 
     public RemoveTransactionsCommand(List<Transaction> transactionsToRemove, Account account){
         this.transactionsToRemove = transactionsToRemove;
@@ -19,24 +18,25 @@ public class RemoveTransactionsCommand implements Command {
 
     @Override
     public void execute() {
-        this.message = "Removed transactions: \n" +
-                this.transactionsToRemove.stream().map(transaction -> transaction.toString() + "\n")
-                .collect(Collectors.joining());
         account.getTransactions().removeAll(transactionsToRemove);
     }
 
     @Override
     public void undo() {
-
+        for(Transaction transaction : this.transactionsToRemove){
+            account.addTransaction(transaction);
+        }
     }
 
     @Override
     public void redo() {
-
+        account.getTransactions().removeAll(transactionsToRemove);
     }
 
     @Override
     public String getName() {
-        return this.message;
+        return "Removed transactions: \n" +
+                this.transactionsToRemove.stream().map(transaction -> transaction.toString() + "\n")
+                        .collect(Collectors.joining());
     }
 }
