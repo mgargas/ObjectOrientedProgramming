@@ -5,6 +5,7 @@ import java.time.LocalDate;
 import java.util.List;
 
 import javafx.beans.binding.Bindings;
+import javafx.collections.FXCollections;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
@@ -97,7 +98,7 @@ public class AccountOverviewController {
 	@FXML
 	private void handleDeleteAction(ActionEvent event) {
 		List<Transaction> transactionsToRemove = transactionsTable.getSelectionModel().getSelectedItems();
-		RemoveTransactionsCommand removeTransactionsCommand = new RemoveTransactionsCommand(transactionsToRemove, data);
+		RemoveTransactionsCommand removeTransactionsCommand = new RemoveTransactionsCommand(FXCollections.observableArrayList(transactionsToRemove), data);
 		commandRegistry.executeCommand(removeTransactionsCommand);
 
 	}
