@@ -3,6 +3,7 @@ package pl.edu.agh.iisg.to.model;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.Collections;
+import java.util.HashMap;
 import java.util.Map;
 import java.util.Optional;
 
@@ -50,10 +51,31 @@ public class Student {
 		return Optional.empty();
 	}
 
-	public Map<Course, Float> createReport() {
-		// TODO additional task
-		return Collections.emptyMap();
-	}
+    public Map<Course, Float> createReport()  {
+        String reportQuery = String.format("SELECT c.id AS course_id, c.name AS course_name, AVG(g.grade) AS grade_avg FROM grade AS g JOIN course AS c ON g.course_id = c.id WHERE g.student_id = %d GROUP BY g.student_id, c.id;", this.id);
+
+        Map<Course, Float> result = new HashMap<>();
+
+        try{
+            ResultSet rs = QueryExecutor.read(reportQuery);
+            while (rs.next()) {
+                Optional<Course> course = Course.findById(rs.getInt("course_id"));
+
+                course.ifPresent(key -> {
+                    try {
+                        result.put(key, rs.getFloat("grade_avg"));
+                    } catch (SQLException e) {
+                        e.printStackTrace();
+                    }
+                });
+            }
+        } catch (SQLException e){
+            e.printStackTrace();
+        }
+
+
+        return result;
+    }
 	
 	public static Optional<Student> findById(final int id) {
 		String findByIdSql = String.format("SELECT * FROM student WHERE id = %d", id);

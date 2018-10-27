@@ -11,21 +11,21 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="Student.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/pl/edu/agh/iisg/to/model/Student.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-778">
-              <caret line="48" column="9" selection-start-line="48" selection-start-column="9" selection-end-line="48" selection-end-column="9" />
+            <state relative-caret-position="660">
+              <caret line="64" column="9" selection-start-line="64" selection-start-column="9" selection-end-line="64" selection-end-column="9" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ActiveRecordTest.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="ActiveRecordTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/pl/edu/agh/iisg/to/ActiveRecordTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1273">
-              <caret line="40" column="26" selection-start-line="40" selection-start-column="26" selection-end-line="40" selection-end-column="26" />
+            <state relative-caret-position="-209">
+              <caret line="113" column="9" selection-start-line="113" selection-start-column="9" selection-end-line="113" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -33,17 +33,20 @@
       <file leaf-file-name="Course.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/pl/edu/agh/iisg/to/model/Course.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="361">
+            <state relative-caret-position="874">
               <caret line="81" column="50" selection-start-line="81" selection-start-column="50" selection-end-line="81" selection-end-column="50" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Grade.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Grade.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/pl/edu/agh/iisg/to/model/Grade.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="17" column="8" lean-forward="true" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="8" />
+            <state relative-caret-position="456">
+              <caret line="26" column="25" selection-start-line="26" selection-start-column="25" selection-end-line="26" selection-end-column="25" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -60,9 +63,9 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/pl/edu/agh/iisg/to/model/Student.java" />
         <option value="$PROJECT_DIR$/src/main/java/pl/edu/agh/iisg/to/model/Course.java" />
         <option value="$PROJECT_DIR$/src/main/java/pl/edu/agh/iisg/to/model/Grade.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pl/edu/agh/iisg/to/model/Student.java" />
       </list>
     </option>
   </component>
@@ -86,9 +89,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
-      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -156,12 +156,15 @@
           <select />
         </subPane>
       </pane>
+      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/pom.xml" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../orm/pom.xml" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Project" />
@@ -180,9 +183,32 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.ActiveRecordTest.gradeStudentTest">
+  <component name="RunManager" selected="JUnit.ActiveRecordTest.createReportTest">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+    </configuration>
+    <configuration name="ActiveRecordTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="active-record" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pl.edu.agh.iisg.to.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="pl.edu.agh.iisg.to" />
+      <option name="MAIN_CLASS_NAME" value="pl.edu.agh.iisg.to.ActiveRecordTest" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
     </configuration>
     <configuration name="ActiveRecordTest.cachedCourseStudentListTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="active-record" />
@@ -230,7 +256,7 @@
       </option>
       <patterns />
     </configuration>
-    <configuration name="ActiveRecordTest.enrollStudentTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ActiveRecordTest.createReportTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="active-record" />
       <extension name="coverage">
         <pattern>
@@ -242,30 +268,7 @@
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="pl.edu.agh.iisg.to" />
       <option name="MAIN_CLASS_NAME" value="pl.edu.agh.iisg.to.ActiveRecordTest" />
-      <option name="METHOD_NAME" value="enrollStudentTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <patterns />
-    </configuration>
-    <configuration name="ActiveRecordTest.findStudentIndexTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="active-record" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="pl.edu.agh.iisg.to.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="pl.edu.agh.iisg.to" />
-      <option name="MAIN_CLASS_NAME" value="pl.edu.agh.iisg.to.ActiveRecordTest" />
-      <option name="METHOD_NAME" value="findStudentIndexTest" />
+      <option name="METHOD_NAME" value="createReportTest" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -338,19 +341,19 @@
       <listeners />
     </configuration>
     <list>
-      <item itemvalue="JUnit.ActiveRecordTest.findStudentIndexTest" />
-      <item itemvalue="JUnit.ActiveRecordTest.enrollStudentTest" />
       <item itemvalue="JUnit.ActiveRecordTest.courseStudentListTest" />
       <item itemvalue="JUnit.ActiveRecordTest.cachedCourseStudentListTest" />
       <item itemvalue="JUnit.ActiveRecordTest.gradeStudentTest" />
+      <item itemvalue="JUnit.ActiveRecordTest" />
+      <item itemvalue="JUnit.ActiveRecordTest.createReportTest" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.ActiveRecordTest.gradeStudentTest" />
+        <item itemvalue="JUnit.ActiveRecordTest.createReportTest" />
+        <item itemvalue="JUnit.ActiveRecordTest" />
         <item itemvalue="JUnit.ActiveRecordTest.cachedCourseStudentListTest" />
+        <item itemvalue="JUnit.ActiveRecordTest.gradeStudentTest" />
         <item itemvalue="JUnit.ActiveRecordTest.courseStudentListTest" />
-        <item itemvalue="JUnit.ActiveRecordTest.enrollStudentTest" />
-        <item itemvalue="JUnit.ActiveRecordTest.findStudentIndexTest" />
       </list>
     </recent_temporary>
   </component>
@@ -375,7 +378,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1540639137496</updated>
-      <workItem from="1540639140686" duration="5125000" />
+      <workItem from="1540639140686" duration="5562000" />
+      <workItem from="1540648112858" duration="658000" />
     </task>
     <servers />
   </component>
@@ -398,42 +402,51 @@
     <history-entry file="ActiveRecordTest_cachedCourseStudentListTest - 2018.10.27 at 14h 41m 41s.xml">
       <configuration name="ActiveRecordTest.cachedCourseStudentListTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="ActiveRecordTest_gradeStudentTest - 2018.10.27 at 14h 47m 45s.xml">
+      <configuration name="ActiveRecordTest.gradeStudentTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ActiveRecordTest_cachedCourseStudentListTest - 2018.10.27 at 14h 52m 14s.xml">
+      <configuration name="ActiveRecordTest.cachedCourseStudentListTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ActiveRecordTest - 2018.10.27 at 14h 52m 26s.xml">
+      <configuration name="ActiveRecordTest" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5125000" />
+    <option name="totallyTimeSpent" value="6220000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="1046" width="1855" height="1084" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info anchor="right" id="Palette" />
+      <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Messages" />
-      <window_info anchor="right" id="Palette&#9;" />
-      <window_info id="Image Layers" />
-      <window_info anchor="right" id="Capture Analysis" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
-      <window_info anchor="right" id="Maven Projects" />
-      <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32924336" />
-      <window_info anchor="bottom" id="Version Control" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info id="Capture Tool" />
-      <window_info id="Designer" />
+      <window_info anchor="right" id="Palette&#9;" order="3" />
+      <window_info id="Image Layers" order="2" />
+      <window_info anchor="right" id="Capture Analysis" order="3" />
+      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
+      <window_info anchor="right" id="Maven Projects" order="3" />
+      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32924336" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32924336" />
+      <window_info id="Capture Tool" order="2" />
+      <window_info id="Designer" order="2" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24959569" />
-      <window_info anchor="right" id="Database" />
+      <window_info anchor="right" id="Database" order="3" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info id="UI Designer" />
-      <window_info anchor="right" id="Theme Preview" />
+      <window_info id="UI Designer" order="2" />
+      <window_info anchor="right" id="Theme Preview" order="3" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info id="Favorites" side_tool="true" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Messages" order="7" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -443,6 +456,37 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/edu/agh/iisg/to/model/Student.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="798">
+          <caret line="48" column="9" selection-start-line="48" selection-start-column="9" selection-end-line="48" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/edu/agh/iisg/to/model/Course.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1444">
+          <caret line="81" column="50" selection-start-line="81" selection-start-column="50" selection-end-line="81" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/edu/agh/iisg/to/model/Grade.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="456">
+          <caret line="26" column="25" selection-start-line="26" selection-start-column="25" selection-end-line="26" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/pl/edu/agh/iisg/to/ActiveRecordTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1824">
+          <caret line="113" column="9" lean-forward="true" selection-start-line="113" selection-start-column="9" selection-end-line="113" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
     <entry file="jar:///usr/lib/jvm/java-8-oracle/src.zip!/java/sql/ResultSet.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-589">
@@ -450,31 +494,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pl/edu/agh/iisg/to/model/Student.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/edu/agh/iisg/to/model/Grade.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-778">
-          <caret line="48" column="9" selection-start-line="48" selection-start-column="9" selection-end-line="48" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/pl/edu/agh/iisg/to/ActiveRecordTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1273">
-          <caret line="40" column="26" selection-start-line="40" selection-start-column="26" selection-end-line="40" selection-end-column="26" />
+        <state relative-caret-position="456">
+          <caret line="26" column="25" selection-start-line="26" selection-start-column="25" selection-end-line="26" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/pl/edu/agh/iisg/to/model/Course.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
+        <state relative-caret-position="874">
           <caret line="81" column="50" selection-start-line="81" selection-start-column="50" selection-end-line="81" selection-end-column="50" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pl/edu/agh/iisg/to/model/Grade.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/edu/agh/iisg/to/model/Student.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="17" column="8" lean-forward="true" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="8" />
+        <state relative-caret-position="660">
+          <caret line="64" column="9" selection-start-line="64" selection-start-column="9" selection-end-line="64" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/pl/edu/agh/iisg/to/ActiveRecordTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-209">
+          <caret line="113" column="9" selection-start-line="113" selection-start-column="9" selection-end-line="113" selection-end-column="9" />
         </state>
       </provider>
     </entry>
@@ -495,7 +542,7 @@
       </state>
       <state key="FacetStructureConfigurable.UI">
         <settings>
-          <last-edited />
+          <last-edited>No facets are configured</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -544,7 +591,7 @@
       </state>
       <state key="ProjectJDKs.UI">
         <settings>
-          <last-edited />
+          <last-edited>Erlang 20</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -556,7 +603,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-          <last-edited />
+          <last-edited>Maven: junit:junit:4.12</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
