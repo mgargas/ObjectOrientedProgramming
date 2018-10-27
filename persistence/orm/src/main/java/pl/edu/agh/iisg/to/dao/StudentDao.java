@@ -1,10 +1,12 @@
 package pl.edu.agh.iisg.to.dao;
 
 import java.util.Collections;
+import java.util.HashMap;
 import java.util.Map;
 import java.util.Optional;
 
 import pl.edu.agh.iisg.to.model.Course;
+import pl.edu.agh.iisg.to.model.Grade;
 import pl.edu.agh.iisg.to.model.Student;
 
 import javax.persistence.PersistenceException;
@@ -38,7 +40,17 @@ public class StudentDao extends GenericDao<Student> {
 
     public Map<Course, Float> createReport(final Student student) {
         //TODO additional task
-        return Collections.emptyMap();
+        Map<Course, Float> courseGradeAverage = new HashMap<>();
+        for(Course course : student.courseSet()){
+            Double courseAverage =
+                    course.gradeSet().stream()
+                            .filter(grade -> grade.student().equals(student))
+                            .mapToDouble(grade -> grade.grade())
+                            .average().orElse(0);
+            System.out.println(courseAverage);
+            courseGradeAverage.put(course, new Float(courseAverage));
+        }
+        return courseGradeAverage;
     }
 
 }

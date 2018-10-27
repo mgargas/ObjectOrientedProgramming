@@ -118,13 +118,16 @@ public class OrmTest {
         checkStudent(first);
         Optional<Course> second = courseDao.create("Bazy");
         checkCourse(second);
+        courseDao.enrollStudent(second.get(), first.get());
         Assert.assertTrue(gradeDao.gradeStudent(first.get(), second.get(), 5.0f));
         Assert.assertTrue(gradeDao.gradeStudent(first.get(), second.get(), 4.0f));
         Optional<Course> third = courseDao.create("Bazy 2");
         checkCourse(third);
+        courseDao.enrollStudent(third.get(), first.get());
         Assert.assertTrue(gradeDao.gradeStudent(first.get(), third.get(), 5.0f));
         Assert.assertTrue(gradeDao.gradeStudent(first.get(), third.get(), 3.0f));
         Map<Course, Float> report = studentDao.createReport(first.get());
+        Assert.assertEquals(2, first.get().courseSet().size());
         Assert.assertTrue(Float.compare(4.5f, report.get(second.get())) == 0);
         Assert.assertTrue(Float.compare(4.0f, report.get(third.get())) == 0);
     }
